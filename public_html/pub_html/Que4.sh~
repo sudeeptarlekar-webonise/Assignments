@@ -1,0 +1,6 @@
+#!bin/bash/
+
+(
+	rename -n 's/\.txt$/_\.txt/' *.txt
+	rename -n 's//xx/' x*
+) | tee Assignment1.log

@@ -1,0 +1,13 @@
+#!bin/bash/
+
+(
+	echo ""
+	echo "-------------------------------------------"
+	echo "Log generated on"
+	date
+	echo ""
+	rename -v 's//xx/' x*
+	echo "--------------------------------------------"
+	echo ""
+) >> Assignment1.log
+
