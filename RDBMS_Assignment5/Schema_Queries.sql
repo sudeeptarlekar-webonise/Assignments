@@ -4,14 +4,14 @@ use assessment_system;
 
 create table users(
 id Integer,
-user_name varchar(20) unique,
+name varchar(20) unique,
 password varchar(20),
 Constraint users_id_PK primary key(id)
 );
 
 create table roles(
 id Integer,
-role_name varchar(10),
+name varchar(10),
 Constraint roles_id_PK primary key (id)
 );
 
@@ -26,7 +26,7 @@ Constraint userRoles_roleID_roles_FK foreign key (role_id) references roles(id)
 
 create table assignments(
 id Integer,
-assignment_name varchar(30),
+name varchar(30),
 user_id Integer,
 Constraint assignments_id_PK primary key (id),
 Constraint assignments_userId_users_FK foreign key (user_id) references users(id)
