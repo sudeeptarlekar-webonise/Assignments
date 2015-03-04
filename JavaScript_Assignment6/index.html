@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Welcome to geometry drawing</title>
+<script src= "js/lib/jquery-1.11.2.js"></script>
+<script src = "js/lib/parserLibrary.js"></script>
+<script src = "js/elementsIdentifier.js"></script>
+</head>
+<body>
+Enter equation to be parsed : <input type = "text"; id = "equation"; autofocus = "true"; value="20x+10y+10=0"; />
+<br/><br/><br/>
+a:<input type = "text"; id = "value_a"; disabled = "true"; size = "2px"; /><br/><br/>
+b:<input type = "text"; id = "value_b"; disabled = "true"; size = "2px"; /><br/><br/>
+c:<input type = "text"; id = "value_c"; disabled = "true"; size = "2px"; /><br/><br/>
+d:<input type = "text"; id = "value_d"; disabled = "true"; size = "2px"; /><br/><br/>
+
+Enter range for x:<input type = "text"; id = "start_x"; size = "2px";/> to <input type = "text"; id = "end_x"; size = "4px"; /><br/><br/>
+Enter step for x:<input type = "text"; id = "step_x"; size = "2px"; /><br/><br/>
+
+<input type="button"; value="Draw Graph"; id="draw_graph"; /><br/><br/>
+<canvas id="geometry_canvas" width="500" height="500" >
+</canvas>
+
+
+</body>
+</html>
